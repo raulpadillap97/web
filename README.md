@@ -1,25 +1,11 @@
 # Gorila — Hero
 
-Sección hero estática y responsive (sin dependencias ni build).
+Sección hero en un único archivo: `index.html` lleva dentro los estilos, el script del menú y la imagen.
 
-```
-index.html            Estructura de la sección
-styles.css            Estilos y animación de entrada
-main.js               Menú móvil (abrir, cerrar, Escape, foco)
-assets/gorila-hero.webp  Imagen protagonista
-```
+## Ver la web
 
-## Ver la web en local
+1. En GitHub pulsa **Code → Download ZIP**.
+2. **Descomprime** el ZIP (clic derecho → «Extraer todo» en Windows, doble clic en Mac).
+3. Haz doble clic en `index.html`.
 
-Opción 1 — abrir el archivo directamente: haz doble clic en `index.html`.
-
-Opción 2 — servidor local (recomendado):
-
-```bash
-git clone https://github.com/raulpadillap97/web.git
-cd web
-git checkout claude/celestial-hero-section-qqe5w5
-python3 -m http.server 8000
-```
-
-Abre http://localhost:8000 en el navegador. Las fuentes se cargan desde Google Fonts, así que necesitas conexión a internet para verlas.
+Las fuentes se cargan desde Google Fonts; sin internet se verá con una tipografía de respaldo.
