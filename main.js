@@ -1,35 +1,4 @@
 (() => {
-  /* ---------- Video ---------- */
-  const video = document.querySelector('.hero__video');
-  const pending = document.querySelector('.hero__pending');
-  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let inView = true;
-
-  const sync = () => {
-    if (!video) return;
-    if (inView && !reduced.matches) {
-      const p = video.play();
-      if (p) p.catch(() => {});
-    } else {
-      video.pause();
-    }
-  };
-
-  if (video) {
-    const showPending = () => { if (pending) pending.hidden = false; };
-    video.addEventListener('error', showPending);
-    if (video.error) showPending();
-
-    if ('IntersectionObserver' in window) {
-      new IntersectionObserver(([entry]) => {
-        inView = entry.isIntersecting;
-        sync();
-      }, { threshold: 0 }).observe(video);
-    }
-    reduced.addEventListener('change', sync);
-    sync();
-  }
-
   /* ---------- Mobile menu ---------- */
   const toggle = document.querySelector('.nav__toggle');
   const menu = document.getElementById('mobile-menu');

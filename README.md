@@ -1,14 +1,25 @@
-# Celestia — Hero
+# Gorila — Hero
 
-Sección hero estática (`index.html`, `styles.css`, `main.js`). Abre `index.html` en el navegador.
+Sección hero estática y responsive (sin dependencias ni build).
 
-## Assets pendientes
+```
+index.html            Estructura de la sección
+styles.css            Estilos y animación de entrada
+main.js               Menú móvil (abrir, cerrar, Escape, foco)
+assets/gorila-hero.webp  Imagen protagonista
+```
 
-Durante el desarrollo el video y el póster se cargan desde las URLs remotas. Antes de publicar, descárgalos y colócalos en la carpeta pública del proyecto, y cambia `src` y `poster` en `index.html`:
+## Ver la web en local
 
-| Asset  | URL de desarrollo | Ruta local |
-| ------ | ----------------- | ---------- |
-| Video  | https://media.dinamosites.com/library/v1/sections/ritual-celeste-video-ab8ddd70b615.mp4 | `/media/ritual-celeste-video.mp4` |
-| Póster | https://media.dinamosites.com/library/v1/sections/ritual-celeste-poster-252a34000387.jpg | `/media/ritual-celeste-poster.jpg` |
+Opción 1 — abrir el archivo directamente: haz doble clic en `index.html`.
 
-La descarga automática falló (403 desde el entorno de desarrollo), así que ambos archivos siguen pendientes. Si el video no carga, el hero muestra el aviso «Video pendiente: ritual-celeste-video.mp4».
+Opción 2 — servidor local (recomendado):
+
+```bash
+git clone https://github.com/raulpadillap97/web.git
+cd web
+git checkout claude/celestial-hero-section-qqe5w5
+python3 -m http.server 8000
+```
+
+Abre http://localhost:8000 en el navegador. Las fuentes se cargan desde Google Fonts, así que necesitas conexión a internet para verlas.

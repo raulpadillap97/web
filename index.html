@@ -3,44 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Celestia · Renovación celestial</title>
-  <meta name="description" content="Tratamientos de belleza y bienestar guiados por los ciclos del cielo.">
+  <title>Gorila · Fuerza tranquila</title>
+  <meta name="description" content="Sudaderas premium y sonido envolvente para quienes se mueven con calma y pisan fuerte.">
+  <meta name="theme-color" content="#1b4320">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&amp;display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:ital,wght@0,400&amp;display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500&amp;display=swap">
+  <link rel="preload" as="image" href="assets/gorila-hero.webp" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <section class="hero" aria-labelledby="hero-title">
-    <div class="hero__media" aria-hidden="true">
-      <!-- Desarrollo: URL remota. Antes de publicar: /media/ritual-celeste-video.mp4 y /media/ritual-celeste-poster.jpg -->
-      <video
-        class="hero__video"
-        src="https://media.dinamosites.com/library/v1/sections/ritual-celeste-video-ab8ddd70b615.mp4"
-        poster="https://media.dinamosites.com/library/v1/sections/ritual-celeste-poster-252a34000387.jpg"
-        autoplay muted loop playsinline preload="metadata"
-        disablepictureinpicture
-        tabindex="-1"></video>
-      <div class="hero__overlay"></div>
-    </div>
-
-    <p class="hero__pending" role="status" hidden>
-      Video pendiente: <code>ritual-celeste-video.mp4</code>
-    </p>
-
     <header class="nav">
-      <a class="nav__brand" href="#">Celestia</a>
+      <a class="nav__brand" href="#">Gorila<span class="nav__dot" aria-hidden="true"></span></a>
 
       <nav class="nav__links" aria-label="Principal">
         <a href="#nosotros">Nosotros</a>
-        <a href="#servicios">Servicios</a>
+        <a href="#coleccion">Colección</a>
         <a href="#diario">Diario</a>
         <a href="#contacto">Contacto</a>
       </nav>
 
-      <a class="btn btn--light btn--sm nav__cta" href="#reservar">Reservar consulta</a>
+      <a class="btn btn--light btn--sm nav__cta" href="#manada">Únete a la manada</a>
 
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
         <span></span><span></span>
@@ -53,24 +39,36 @@
       </button>
       <nav class="menu__links" aria-label="Principal móvil">
         <a href="#nosotros">Nosotros</a>
-        <a href="#servicios">Servicios</a>
+        <a href="#coleccion">Colección</a>
         <a href="#diario">Diario</a>
         <a href="#contacto">Contacto</a>
       </nav>
-      <a class="btn btn--light" href="#reservar">Reservar consulta</a>
+      <a class="btn btn--light" href="#manada">Únete a la manada</a>
     </div>
 
-    <div class="hero__content">
-      <p class="hero__pill">Renovación celestial · Ritual de temporada</p>
-      <h1 class="hero__title" id="hero-title">
-        <span>Renueva tu luz,</span>
-        <em>desde dentro.</em>
-      </h1>
-      <p class="hero__text">Tratamientos de belleza y bienestar guiados por los ciclos del cielo. Lento, preciso, luminoso.</p>
-      <div class="hero__actions">
-        <a class="btn btn--light" href="#reservar">Reservar consulta</a>
-        <a class="btn btn--glass" href="#ritual">Descubrir el ritual</a>
+    <div class="hero__body">
+      <div class="hero__content">
+        <p class="hero__pill"><span class="hero__pill-dot" aria-hidden="true"></span>Nueva colección · Temporada verde</p>
+        <h1 class="hero__title" id="hero-title">
+          <span>Fuerza tranquila,</span>
+          <em>estilo salvaje.</em>
+        </h1>
+        <p class="hero__text">Sudaderas premium y sonido envolvente para quienes se mueven con calma y pisan fuerte. Cómodo, resistente, auténtico.</p>
+        <div class="hero__actions">
+          <a class="btn btn--light" href="#manada">Únete a la manada</a>
+          <a class="btn btn--glass" href="#coleccion">Descubrir la colección</a>
+        </div>
       </div>
+
+      <figure class="hero__figure">
+        <img
+          class="hero__img"
+          src="assets/gorila-hero.webp"
+          width="1024" height="1536"
+          alt="Gorila sonriente con sudadera verde y auriculares, haciendo el gesto de pulgar arriba"
+          fetchpriority="high"
+          decoding="async">
+      </figure>
     </div>
 
     <p class="hero__scroll" aria-hidden="true">Desplázate</p>
